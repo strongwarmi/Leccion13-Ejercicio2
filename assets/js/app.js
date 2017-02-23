@@ -5,7 +5,7 @@ var trabajador = [ { nombre : "Arabela", apellido : "Rojas", rol : "T.A", cumple
     { nombre : "Gian", apellido : "Corzo", rol : "Profesor", cumpleanios : "23 de enero" } ];
 function Lista(){
   var cadena = "";
-  for (var  i = 0;i<trabajador.length;i++) {
+  for (var i in trabajador) {
     cadena = cadena + "<ul><li>" + "Nombre : " + trabajador[i].nombre +"</li><li>Apellido: "+ trabajador[i].apellido+
     "</li><li>Rol: "+ trabajador[i].rol + "</li><li>Cumpleaños: "+ trabajador[i].cumpleanios+"</li></ul>";
   }
